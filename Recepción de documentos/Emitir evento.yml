@@ -1,0 +1,44 @@
+info:
+  name: Emitir evento
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{url_api}}/v2/receptions/bills/:bill_id/radian/events/:event_type"
+  headers:
+    - name: Accept
+      value: application/json
+  params:
+    - name: bill_id
+      value: ""
+      type: path
+      description: ID de la factura electrónica
+    - name: event_type
+      value: ""
+      type: path
+      description: Código del evento a emitir
+  body:
+    type: json
+    data: |-
+      {
+          "identification_document_code": "13",
+          "identification": "12345667",
+          "dv": "",
+          "first_name": "Pepito",
+          "last_name": "Perez",
+          "job_title": "Desarollador de software",
+          "organization_department": "Sistemas"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/recepcion-de-documentos/emitir-evento/](https://developers.factus.com.co/recepcion-de-documentos/emitir-evento/)

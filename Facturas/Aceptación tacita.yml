@@ -1,0 +1,43 @@
+info:
+  name: Aceptación tacita
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url_api}}/v2/bills/:number/radian/events/:event_type"
+  headers:
+    - name: Accept
+      value: application/json
+  params:
+    - name: number
+      value: SETP990001095
+      type: path
+    - name: event_type
+      value: "034"
+      type: path
+      description: Código del evento
+  body:
+    type: json
+    data: |-
+      {
+          "identification_document_code": "13",
+          "identification": "12345667",
+          "dv": "",
+          "first_name": "Pepito",
+          "last_name": "Perez",
+          "job_title": "Desarollador de software",
+          "organization_department": "Sistemas"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/facturas/aceptacion-tacita/](https://developers.factus.com.co/facturas/aceptacion-tacita/)

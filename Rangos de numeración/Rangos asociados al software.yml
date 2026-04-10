@@ -1,0 +1,23 @@
+info:
+  name: Rangos asociados al software
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{url_api}}/v2/numbering-ranges/dian"
+  headers:
+    - name: Accept
+      value: application/json
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/rangos-de-numeracion/rangos-asociados-al-software/](https://developers.factus.com.co/rangos-de-numeracion/rangos-asociados-al-software/)

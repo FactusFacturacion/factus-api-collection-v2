@@ -1,0 +1,31 @@
+info:
+  name: Cambiar estado
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: "{{url_api}}/v2/numbering-ranges/:numbering_range_id/toggle-status"
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: numbering_range_id
+      value: "189"
+      type: path
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  Ver Documentación:  
+  [https://developers.factus.com.co/rangos-de-numeracion/cambiar-estado/](https://developers.factus.com.co/rangos-de-numeracion/cambiar-estado/)

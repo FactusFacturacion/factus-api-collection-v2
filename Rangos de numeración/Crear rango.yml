@@ -1,0 +1,31 @@
+info:
+  name: Crear rango
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url_api}}/v2/numbering-ranges"
+  headers:
+    - name: Accept
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "document": "22", 
+          "prefix": "CRTE", 
+          "current": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/rangos-de-numeracion/crear-rango/](https://developers.factus.com.co/rangos-de-numeracion/crear-rango/)

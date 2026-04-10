@@ -1,0 +1,51 @@
+opencollection: 1.0.0
+
+info:
+  name: API Factus V2
+
+request:
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+  variables:
+    - name: bill_reference_code
+      value: ""
+    - name: version
+      value: ""
+    - name: credit_reference_code
+      value: ""
+  scripts:
+    - type: before-request
+      code: |-
+        const urlAPI = bru.getEnvVar("url_api");
+        const clientID = bru.getEnvVar("client_id");
+        const clientSecret = bru.getEnvVar("client_secret");
+        const username = bru.getEnvVar("email");
+        const password = bru.getEnvVar("password");
+        await bru.sendRequest({
+            url: urlAPI + '/oauth/token',
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            data: {
+                "grant_type": 'password',
+                "client_id": clientID,
+                "client_secret": clientSecret,
+                "username": username,
+                "password": password
+            }
+        }, async function(err, res) {
+            if (err) {
+                console.error(err);
+            } else {
+                bru.setGlobalEnvVar('access_token', res.data.access_token);
+            }
+        });
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

@@ -1,0 +1,36 @@
+info:
+  name: Actualizar empresa
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{url_api}}/v2/companies"
+  body:
+    type: json
+    data: |-
+      {
+        "legal_organization_code": "1",
+        "company": "HALLTEC S.A.S.",
+        "trade_name": null,
+        "email": "yocahe5@gmail.com",
+        "address": "calle 11 8-84",
+        "registration_code": "33253427",
+        "economic_activity": "6311",
+        "phone": "3165584659",
+        "municipality_code": "68872",
+        "tribute_code": "01",
+        "responsibilities": "R-99-PN,O-15"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/empresas/actualizar/](https://developers.factus.com.co/empresas/actualizar/)

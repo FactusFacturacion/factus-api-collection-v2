@@ -1,0 +1,30 @@
+info:
+  name: Eliminar factura no validada
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: "{{url_api}}/v2/bills/destroy/reference/:reference_code"
+  headers:
+    - name: Accept
+      value: application/json
+  params:
+    - name: reference_code
+      value: "{{bill_reference_code}}"
+      type: path
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/facturas/eliminar/](https://developers.factus.com.co/facturas/eliminar/)

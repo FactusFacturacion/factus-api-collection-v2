@@ -1,0 +1,12 @@
+name: local halltec
+variables:
+  - secret: true
+    name: url_api
+  - secret: true
+    name: email
+  - secret: true
+    name: password
+  - secret: true
+    name: client_id
+  - secret: true
+    name: client_secret

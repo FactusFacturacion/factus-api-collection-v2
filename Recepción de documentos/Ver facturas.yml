@@ -1,0 +1,59 @@
+info:
+  name: Ver facturas
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url_api}}/v2/receptions/bills"
+  headers:
+    - name: Accept
+      value: application/json
+  params:
+    - name: filter[id]
+      value: ""
+      type: query
+      description: ID de la factura
+      disabled: true
+    - name: filter[number]
+      value: ""
+      type: query
+      description: Número de la factura
+      disabled: true
+    - name: filter[issue_date]
+      value: ""
+      type: query
+      description: Fecha de emisión de la factura
+      disabled: true
+    - name: filter[cufe]
+      value: ""
+      type: query
+      description: CUFE de la factura
+      disabled: true
+    - name: filter[company_nit]
+      value: ""
+      type: query
+      description: NIT de la empresa o persona que te emitio la factura
+      disabled: true
+    - name: filter[company_name]
+      value: ""
+      type: query
+      description: Nombre de la persona o empresa que te emitio la factura
+      disabled: true
+    - name: filter[completed_events]
+      value: ""
+      type: query
+      description: Usa 1 para listar las facturas que no tienen eventos pendientes por emitir y 0 para mostrar las facturas que tienen eventos pendientes por emitir.
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/recepcion-de-documentos/ver-facturas/](https://developers.factus.com.co/recepcion-de-documentos/ver-facturas/)

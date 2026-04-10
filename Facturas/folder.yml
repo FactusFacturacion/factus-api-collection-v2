@@ -1,0 +1,14 @@
+info:
+  name: Facturas
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit
+
+docs:
+  content: |-
+    **Descripción de los campos necesarios para realizar una factura:**
+
+    [https://developers.factus.com.co/facturas/descripcion-de-campos/](https://developers.factus.com.co/facturas/descripcion-de-campos/)
+  type: text/markdown

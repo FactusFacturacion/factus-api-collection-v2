@@ -1,0 +1,14 @@
+info:
+  name: Notas Crédito
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit
+
+docs:
+  content: |-
+    **Descripción de los campos necesarios para realizar una nota crédito:**
+
+    [https://developers.factus.com.co/notas-credito/descripcion-de-campos/](https://developers.factus.com.co/notas-credito/descripcion-de-campos/)
+  type: text/markdown

@@ -1,0 +1,29 @@
+info:
+  name: Cargar factura
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url_api}}/v2/receptions/upload"
+  headers:
+    - name: Accept
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "track_id": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/recepcion-de-documentos/cargar-factura/](https://developers.factus.com.co/recepcion-de-documentos/cargar-factura/)

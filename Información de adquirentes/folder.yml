@@ -1,0 +1,7 @@
+info:
+  name: Información de adquirentes
+  type: folder
+  seq: 5
+
+request:
+  auth: inherit

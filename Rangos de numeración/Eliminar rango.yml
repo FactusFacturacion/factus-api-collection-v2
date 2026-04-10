@@ -1,0 +1,28 @@
+info:
+  name: Eliminar rango
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{url_api}}/v2/numbering-ranges/:numbering_range_id"
+  headers:
+    - name: Accept
+      value: application/json
+  params:
+    - name: numbering_range_id
+      value: "190"
+      type: path
+      description: ID del rango de numeración
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/rangos-de-numeracion/eliminar-rango/](https://developers.factus.com.co/rangos-de-numeracion/eliminar-rango/)

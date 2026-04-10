@@ -1,0 +1,18 @@
+info:
+  name: Notas crédito
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{url_api}}/v2/credit-notes"
+  headers:
+    - name: Accept
+      value: application/json
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

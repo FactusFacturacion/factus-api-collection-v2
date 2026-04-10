@@ -1,0 +1,20 @@
+info:
+  name: Ver empresa
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url_api}}/v2/companies"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/empresas/ver/](https://developers.factus.com.co/empresas/ver/)

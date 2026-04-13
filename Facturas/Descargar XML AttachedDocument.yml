@@ -1,11 +1,11 @@
 info:
-  name: Obtener contenido de email
+  name: Descargar XML AttachedDocument
   type: http
-  seq: 12
+  seq: 8
 
 http:
   method: GET
-  url: "{{url_api}}/v2/bills/:number/email-content"
+  url: "{{url_api}}/v2/bills/:number/download-attached-document-xml"
   headers:
     - name: Accept
       value: application/json
@@ -23,8 +23,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-
-docs: |-
-  **Ver Documentación:**
-
-  [https://developers.factus.com.co/facturas/obtener-contenido-de-correo/](https://developers.factus.com.co/facturas/obtener-contenido-de-correo/)

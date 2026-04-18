@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{url_api}}/v2/dian/acquirer?identification_document_id=3&identification_number=1399991"
+  url: "{{url_api}}/v2/dian/acquirer?identification_document_code=13&identification_number=1399991"
   params:
-    - name: identification_document_id
-      value: "3"
+    - name: identification_document_code
+      value: "13"
       type: query
     - name: identification_number
       value: "1399991"

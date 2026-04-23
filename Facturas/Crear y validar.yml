@@ -18,7 +18,7 @@ http:
           "numbering_range_id": 4,
           "operation_type": "10", // estandar
           "send_email": false,
-          "payment_details": [    
+          "payment_details": [
               {
                   "payment_form": 1,
                   "payment_method_code": "42",
@@ -27,16 +27,17 @@ http:
                   "due_date": "2026-03-30"
               }
           ],
+          "cash_rounding_amount": "0.00",
           "observation": "Observacion de prueba",
           "customer": {
               "identification_document_code": "31",
               "identification": "123456789",
               "company": "Alan company name",
               "trade_name": "Alan trade name",
-              "address": "calle 1 # 1-1", 
+              "address": "calle 1 # 1-1",
               "email": "alan.company@email.com",
               "phone": "1234567890",
-              "legal_organization_code": "1", 
+              "legal_organization_code": "1",
               "tribute_code": "ZZ",
               "municipality_code": "68679"
           },

@@ -1,7 +1,7 @@
 info:
   name: Aceptación tacita
   type: http
-  seq: 11
+  seq: 10
 
 http:
   method: POST

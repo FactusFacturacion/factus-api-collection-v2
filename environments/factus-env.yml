@@ -1,4 +1,4 @@
-name: local halltec
+name: factus-env
 variables:
   - secret: true
     name: url_api
@@ -10,3 +10,5 @@ variables:
     name: client_id
   - secret: true
     name: client_secret
+  - name: access_token
+    value: ""

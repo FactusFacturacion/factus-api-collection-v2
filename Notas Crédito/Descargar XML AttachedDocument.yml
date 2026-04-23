@@ -23,11 +23,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-
-docs: |-
-  **Nota:** Es necesario el envio del (access_token) token para consultar este endpoint.  
-  Para ver como generar el token. use el siguiente link. [Auth endpoint](https://martian-spaceship-418933.postman.co/workspace/api.factus.com.co~af54fc7a-b3d9-40a7-9f62-273f3ec355b9/request/22150862-d94026db-94e7-430e-81b1-86cd3e7d9de6?ctx=documentation)
-
-  Recuerde que el token de acceso caduca cada hora.
-
-  Este endpoint permite obtener el asunto y el zip adjunto (en formato Base64) que normalmente se envían al cliente por correo electrónico. Está diseñado para escenarios en los que el envío automático del correo ha sido deshabilitado (send_email = false), permitiendo así que el integrador gestione manualmente el envío del correo al cliente final. El archivo adjunto corresponde al archivo zip que contiene el pdf de la nota credito y el attached document que se enviaría en el correo oficial.

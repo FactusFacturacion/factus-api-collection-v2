@@ -10,65 +10,72 @@ http:
     type: json
     data: |-
       {
-          "reference_code": "{{credit_reference_code}}",
-          "correction_concept_code": "2",
-          "customization_id": "20",
-          "bill_number": "SETP990001131",
-          "numbering_range_id": 5,
-          "payment_details": [    
+        "reference_code": "{{credit_reference_code}}",
+        "correction_concept_code": "2",
+        "customization_id": "20",
+        "bill_number": "SETP990001131",
+        "numbering_range_id": 5,
+        "payment_details": [
+          {
+            "payment_form": 1,
+            "payment_method_code": "42",
+            "reference_code": "pago-001",
+            "amount": "83300",
+            "due_date": "2026-03-30"
+          }
+        ],
+        "health": { // Campos de datos del sector salud
+          "provider_code": "1920304050",
+          "payment_method_code": "04",
+          "coverage_code": "10",
+          "contract_number": "CONT1230",
+          "policy_number": ""
+        },
+        "observation": "descripcion de prueba",
+        "customer": {
+          "identification_document_code": "31",
+          "identification": "123456789",
+          "company": "Alan company name",
+          "trade_name": "Alan trade name",
+          "address": "calle 1 # 1-1",
+          "email": "alan.company@email.com",
+          "phone": "1234567890",
+          "legal_organization_code": "1",
+          "tribute_code": "ZZ",
+          "municipality_code": "68679"
+        },
+        "items": [
+          {
+            "code_reference": "PROD-000A",
+            "name": "Producto A",
+            "quantity": "1.00",
+            "discount_rate": "0.00",
+            "price": "10000.00",
+            "unit_measure_code": "94",
+            "standard_code": "999",
+            "taxes": [
               {
-                  "payment_form": 1,
-                  "payment_method_code": "42",
-                  "reference_code": "pago-001",
-                  "amount": "83300",
-                  "due_date": "2026-03-30"
+                "code": "01",
+                "rate": "19.00"
               }
-          ],
-          "observation": "descripcion de prueba",
-          "customer": {
-              "identification_document_code": "31",
-              "identification": "123456789",
-              "company": "Alan company name",
-              "trade_name": "Alan trade name",
-              "address": "calle 1 # 1-1",
-              "email": "alan.company@email.com",
-              "phone": "1234567890",
-              "legal_organization_code": "1",
-              "tribute_code": "ZZ",
-              "municipality_code": "68679"
+            ]
           },
-          "items": [
+          {
+            "code_reference": "PROD-000B",
+            "name": "Producto B",
+            "quantity": "3.00",
+            "discount_rate": "0.00",
+            "price": "20000.00",
+            "unit_measure_code": "94",
+            "standard_code": "999",
+            "taxes": [
               {
-                  "code_reference": "PROD-000A",
-                  "name": "Producto A",
-                  "quantity": "1.00",
-                  "discount_rate": "0.00",
-                  "price": "10000.00",
-                  "unit_measure_code": "94",
-                  "standard_code": "999",
-                  "taxes": [
-                      {
-                          "code": "01",
-                          "rate": "19.00"
-                      }
-                  ]
-              },
-              {
-                  "code_reference": "PROD-000B",
-                  "name": "Producto B",
-                  "quantity": "3.00",
-                  "discount_rate": "0.00",
-                  "price": "20000.00",
-                  "unit_measure_code": "94",
-                  "standard_code": "999",
-                  "taxes": [
-                      {
-                          "code": "01",
-                          "rate": "19.00"
-                      }
-                  ]
+                "code": "01",
+                "rate": "19.00"
               }
-          ]
+            ]
+          }
+        ]
       }
   auth: inherit
 

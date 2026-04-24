@@ -24,6 +24,7 @@ http:
             "due_date": "2026-03-30"
           }
         ],
+        "cash_rounding_amount": "0.00",
         "health": { // Campos de datos del sector salud
           "provider_code": "1920304050",
           "payment_method_code": "04",

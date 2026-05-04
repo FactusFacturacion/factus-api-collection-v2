@@ -1,0 +1,22 @@
+info:
+  name: Ver documento
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url_api}}/v2/support-documents/:number"
+  params:
+    - name: number
+      value: SEDS984000129
+      type: path
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,30 @@
+info:
+  name: Descargar XML
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url_api}}/v2/support-documents/:number/download-xml"
+  headers:
+    - name: Accept
+      value: application/json
+  params:
+    - name: number
+      value: SEDS984000129
+      type: path
+  body:
+    type: text
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/facturas/descargar-xml/](https://developers.factus.com.co/facturas/descargar-xml/)

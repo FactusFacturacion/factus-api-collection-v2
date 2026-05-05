@@ -1,7 +1,7 @@
 info:
-  name: Recepción de documentos
+  name: Documentos
   type: folder
-  seq: 9
+  seq: 6
 
 request:
   auth: inherit

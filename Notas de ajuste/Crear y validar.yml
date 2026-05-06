@@ -12,7 +12,6 @@ http:
       {
         "reference_code": "AN-2026-v2-0005",
         //   "numbering_range_id": 8,
-        "payment_method_code": "3",
         "support_document_number": "SEDS984000129",
         "correction_concept_code": "5",
         "created_time": "15:26:00",

@@ -17,7 +17,7 @@ http:
             "payment_form": "1",
             "payment_method_code": "42",
             "reference_code": "pago-002",
-            "amount": "40000",
+            "amount": "40000"
           },
           {
             "payment_form": "2",
@@ -35,17 +35,24 @@ http:
           "names": "Pepito Perez",
           "address": "calle 4",
           "country_code": "CO",
-          "municipality_code": "68679",
+          "municipality_code": "68679"
         },
         "items": [
           {
-            "code_reference": "12345", 
+            "code_reference": "12345",
             "name": "producto de prueba",
             "quantity": "2.00",
             "discount_rate": "20.00",
             "price": "50000.00",
             "unit_measure_code": "94",
             "standard_code": "999",
+            "taxes": [
+              {
+                "code": "01",
+                "rate": "19.00"
+                //           "is_excluded": true
+              }
+            ],
             "withholding_taxes": [
               {
                 "code": "06",

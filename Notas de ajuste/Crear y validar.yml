@@ -49,6 +49,13 @@ http:
             "price": "50000.00",
             "unit_measure_code": "94",
             "standard_code": "999",
+            "taxes": [
+              {
+                "code": "01",
+                "rate": "19.00"
+      //           "is_excluded": true
+              }
+            ],
             "withholding_taxes": [
               {
                 "code": "06",

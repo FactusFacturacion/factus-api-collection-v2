@@ -5,7 +5,38 @@ info:
 
 http:
   method: GET
-  url: "{{url_api}}/v2/support-documents"
+  url: "{{url_api}}/v2/support-documents?filter[identification]=&filter[names]=&filter[number]=&filter[prefix]=&filter[reference_code]=&filter[status]=&filter[per_page]=&filter[created_at][start_date]=&filter[created_at][end_date]=&page ="
+  params:
+    - name: filter[identification]
+      value: ""
+      type: query
+    - name: filter[names]
+      value: ""
+      type: query
+    - name: filter[number]
+      value: ""
+      type: query
+    - name: filter[prefix]
+      value: ""
+      type: query
+    - name: filter[reference_code]
+      value: ""
+      type: query
+    - name: filter[status]
+      value: ""
+      type: query
+    - name: filter[per_page]
+      value: ""
+      type: query
+    - name: filter[created_at][start_date]
+      value: ""
+      type: query
+    - name: filter[created_at][end_date]
+      value: ""
+      type: query
+    - name: "page "
+      value: ""
+      type: query
   body:
     type: json
     data: ""

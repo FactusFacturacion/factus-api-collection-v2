@@ -53,7 +53,7 @@ http:
       type: query
       disabled: true
     - name: page
-      value: "2"
+      value: "1"
       type: query
       disabled: true
   body:

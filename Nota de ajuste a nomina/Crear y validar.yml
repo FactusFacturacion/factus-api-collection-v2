@@ -1,0 +1,31 @@
+info:
+  name: Crear y validar
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url_api}}/v2/delete-payrolls"
+  headers:
+    - name: Accept
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "payroll_number": "NEF110",
+        "reference_code": "990000001",
+        "numbering_range_id": "01kpdv25zj3f7sd5sedemgbnx9"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  **Documentación:**
+
+  [https://developers.factus.com.co/nota-ajuste-nomina/crear-y-validar](https://developers.factus.com.co/nota-ajuste-nomina/crear-y-validar)

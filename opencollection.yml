@@ -25,6 +25,8 @@ request:
       value: ""
     - name: credit_reference_code
       value: ""
+    - name: debit_reference_code
+      value: ""
   scripts:
     - type: before-request
       code: |-

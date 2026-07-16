@@ -43,6 +43,7 @@ http:
           "phone": "1234567890",
           "legal_organization_code": "1",
           "tribute_code": "ZZ",
+          "country_code": "CO",
           "municipality_code": "68679"
         },
         "items": [

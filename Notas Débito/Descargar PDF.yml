@@ -1,0 +1,19 @@
+info:
+  name: Descargar PDF
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url_api}}/v2/debit-notes/:number/download-pdf"
+  params:
+    - name: number
+      value: ""
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{url_api}}/v2/credit-notes?filter[identification]=&filter[names]=&filter[number]=&filter[prefix]=&filter[reference_code]=&filter[status]=&filter[per_page]=&filter[created_at][start_date]=&filter[created_at][end_date]=&page ="
+  url: "{{url_api}}/v2/credit-notes"
   headers:
     - name: Accept
       value: application/json
@@ -13,33 +13,43 @@ http:
     - name: filter[identification]
       value: ""
       type: query
+      disabled: true
     - name: filter[names]
       value: ""
       type: query
+      disabled: true
     - name: filter[number]
       value: ""
       type: query
+      disabled: true
     - name: filter[prefix]
       value: ""
       type: query
+      disabled: true
     - name: filter[reference_code]
       value: ""
       type: query
+      disabled: true
     - name: filter[status]
       value: ""
       type: query
+      disabled: true
     - name: filter[per_page]
       value: ""
       type: query
+      disabled: true
     - name: filter[created_at][start_date]
       value: ""
       type: query
+      disabled: true
     - name: filter[created_at][end_date]
       value: ""
       type: query
+      disabled: true
     - name: "page "
       value: ""
       type: query
+      disabled: true
   auth: inherit
 
 settings:

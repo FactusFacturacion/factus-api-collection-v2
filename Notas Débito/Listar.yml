@@ -1,0 +1,56 @@
+info:
+  name: Listar
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{url_api}}/v2/debit-notes"
+  params:
+    - name: filter[identification]
+      value: ""
+      type: query
+      disabled: true
+    - name: filter[names]
+      value: ""
+      type: query
+      disabled: true
+    - name: filter[number]
+      value: ""
+      type: query
+      disabled: true
+    - name: filter[prefix]
+      value: ""
+      type: query
+      disabled: true
+    - name: filter[reference_code]
+      value: ""
+      type: query
+      disabled: true
+    - name: filter[status]
+      value: ""
+      type: query
+      disabled: true
+    - name: filter[per_page]
+      value: ""
+      type: query
+      disabled: true
+    - name: filter[created_at][start_date]
+      value: ""
+      type: query
+      disabled: true
+    - name: filter[created_at][end_date]
+      value: ""
+      type: query
+      disabled: true
+    - name: page
+      value: "1"
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

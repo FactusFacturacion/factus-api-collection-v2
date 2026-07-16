@@ -1,7 +1,7 @@
 info:
-  name: Eliminar documento no validado
+  name: Eliminar no validada
   type: http
-  seq: 4
+  seq: 2
 
 http:
   method: DELETE

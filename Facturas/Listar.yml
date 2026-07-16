@@ -1,5 +1,5 @@
 info:
-  name: Listar Facturas
+  name: Listar
   type: http
   seq: 4
 

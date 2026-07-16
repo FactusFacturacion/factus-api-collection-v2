@@ -1,5 +1,5 @@
 info:
-  name: Actualizar empresa
+  name: Actualizar
   type: http
   seq: 2
 

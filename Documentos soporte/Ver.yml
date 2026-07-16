@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{url_api}}/v2/adjustment-notes/:number"
+  url: "{{url_api}}/v2/support-documents/:number"
   params:
     - name: number
-      value: NDA65
+      value: SEDS984000129
       type: path
   body:
     type: json

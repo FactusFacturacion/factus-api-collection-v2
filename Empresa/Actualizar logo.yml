@@ -1,5 +1,5 @@
 info:
-  name: Actualizar logo de la empresa
+  name: Actualizar logo
   type: http
   seq: 3
 

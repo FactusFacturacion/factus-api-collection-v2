@@ -1,7 +1,7 @@
 info:
-  name: Recepción de documentos
+  name: Nómina
   type: folder
-  seq: 11
+  seq: 8
 
 request:
   auth: inherit

@@ -1,7 +1,7 @@
 info:
-  name: Eliminar factura no validada
+  name: Eliminar no validada
   type: http
-  seq: 2
+  seq: 4
 
 http:
   method: DELETE

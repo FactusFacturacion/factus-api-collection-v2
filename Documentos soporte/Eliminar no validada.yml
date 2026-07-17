@@ -1,14 +1,14 @@
 info:
-  name: Ver documento
+  name: Eliminar no validada
   type: http
   seq: 2
 
 http:
-  method: GET
-  url: "{{url_api}}/v2/support-documents/:number"
+  method: DELETE
+  url: "{{url_api}}/v2/support-documents/reference/:reference_code"
   params:
-    - name: number
-      value: SEDS984000129
+    - name: reference_code
+      value: 4d676396-5f95-4333-8ebd-5e8ac5bd1301
       type: path
   body:
     type: json

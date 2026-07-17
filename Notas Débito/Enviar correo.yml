@@ -10,6 +10,13 @@ http:
     - name: number
       value: ND86
       type: path
+  body:
+    type: json
+    data: |-
+      {
+          "email": "alanturing@enigmasas.com.com",
+          "pdf_base_64_encoded": "sdfajdfka...."
+      }
   auth: inherit
 
 settings:

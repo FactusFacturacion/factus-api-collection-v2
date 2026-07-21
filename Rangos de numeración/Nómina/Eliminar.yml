@@ -1,0 +1,19 @@
+info:
+  name: Eliminar
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: "{{url_api}}/v2/numbering-ranges/payrolls/:numbering_range_id"
+  params:
+    - name: numbering_range_id
+      value: 01ky2s927049y75rk1hqs5g9t3
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

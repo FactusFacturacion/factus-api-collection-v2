@@ -1,0 +1,19 @@
+info:
+  name: Actualizar concecutivo
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{url_api}}/v2/numbering-ranges/payrolls/:numbering_range_id/current"
+  params:
+    - name: numbering_range_id
+      value: 01kx1jt9k70rnb4zprpys837y8
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

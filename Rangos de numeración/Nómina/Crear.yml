@@ -8,7 +8,12 @@ http:
   url: "{{url_api}}/v2/numbering-ranges/payrolls"
   body:
     type: json
-    data: ""
+    data: |-
+      {
+        "document": "26",
+        "prefix": "NE",
+        "current": "1"
+      }
   auth: inherit
 
 settings:

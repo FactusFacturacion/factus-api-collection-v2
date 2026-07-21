@@ -1,10 +1,10 @@
 info:
-  name: Eliminar
+  name: Ver
   type: http
-  seq: 3
+  seq: 1
 
 http:
-  method: DELETE
+  method: GET
   url: "{{url_api}}/v2/numbering-ranges/:numbering_range_id"
   headers:
     - name: Accept
@@ -13,7 +13,7 @@ http:
     - name: numbering_range_id
       value: "190"
       type: path
-      description: ID del rango de numeración
+      description: ID del rango de numeracion
   auth: inherit
 
 settings:
@@ -25,4 +25,4 @@ settings:
 docs: |-
   **Ver Documentación:**
 
-  [https://developers.factus.com.co/rangos-de-numeracion/eliminar-rango/](https://developers.factus.com.co/rangos-de-numeracion/eliminar-rango/)
+  [https://developers.factus.com.co/rangos-de-numeracion/ver-rango/](https://developers.factus.com.co/rangos-de-numeracion/ver-rango/)

@@ -1,11 +1,11 @@
 info:
-  name: Cambiar estado
+  name: Actualizar consecutivo
   type: http
-  seq: 8
+  seq: 1
 
 http:
   method: PATCH
-  url: "{{url_api}}/v2/numbering-ranges/:numbering_range_id/toggle-status"
+  url: "{{url_api}}/v2/numbering-ranges/:numbering_range_id/current"
   headers:
     - name: Accept
       value: application/json
@@ -17,7 +17,10 @@ http:
       type: path
   body:
     type: json
-    data: ""
+    data: |-
+      {
+          "current": 3
+      }
   auth: inherit
 
 settings:
@@ -27,5 +30,6 @@ settings:
   maxRedirects: 5
 
 docs: |-
-  Ver Documentación:  
-  [https://developers.factus.com.co/rangos-de-numeracion/cambiar-estado/](https://developers.factus.com.co/rangos-de-numeracion/cambiar-estado/)
+  **Ver Documentación:**
+
+  [https://developers.factus.com.co/rangos-de-numeracion/actualizar-consecutivo/](https://developers.factus.com.co/rangos-de-numeracion/actualizar-consecutivo/)

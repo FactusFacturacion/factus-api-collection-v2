@@ -6,6 +6,19 @@ info:
 http:
   method: GET
   url: "{{url_api}}/v2/numbering-ranges/payrolls"
+  params:
+    - name: filter[code]
+      value: "26"
+      type: query
+      disabled: true
+    - name: filter[is_enabled]
+      value: "true"
+      type: query
+      disabled: true
+    - name: page
+      value: "1"
+      type: query
+      disabled: true
   auth: inherit
 
 settings:

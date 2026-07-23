@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: "{{url_api}}/v2/delete-payrolls/reference/:reference_code"
+  url: "{{url_api}}/v2/adjustment-payrolls/reference/:reference_code"
   headers:
     - name: Accept
       value: application/json

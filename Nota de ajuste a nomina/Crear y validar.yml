@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{url_api}}/v2/delete-payrolls"
+  url: "{{url_api}}/v2/adjustment-payrolls"
   headers:
     - name: Accept
       value: application/json

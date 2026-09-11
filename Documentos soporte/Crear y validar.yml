@@ -58,7 +58,11 @@ http:
                 "code": "06",
                 "rate": "3.50"
               }
-            ]
+            ],
+            "period": {
+              "start_date": "2026-09-05",
+              "generation_mode": "2"
+            }
           }
         ]
       }
@@ -69,3 +73,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

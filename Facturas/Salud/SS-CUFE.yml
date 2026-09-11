@@ -33,7 +33,8 @@ http:
           "payment_method_code": "04",
           "coverage_code": "10",
           "contract_number": "CONT1230",
-          "policy_number": ""
+          "policy_number": "",
+          "without_contract_code": "07"
         },
         "prepayment_details": [
           {

@@ -17,14 +17,14 @@ http:
             "payment_form": "1",
             "payment_method_code": "42",
             "reference_code": "pago-002",
-            "amount": "40000"
+            "amount": "50000"
           },
           {
             "payment_form": "2",
             "payment_method_code": "10",
             "reference_code": "pago-003",
-            "amount": "40000",
-            "due_date": "2026-05-25"
+            "amount": "45300",
+            "due_date": "2028-05-25"
           }
         ],
         "cash_rounding_amount": "0.00",

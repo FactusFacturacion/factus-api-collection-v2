@@ -44,6 +44,9 @@ http:
           "legal_organization_code": "1",
           "tribute_code": "ZZ",
           "country_code": "CO",
+          "responsibilities": [
+            "R-99-PN"
+          ],
           "municipality_code": "68679"
         },
         "items": [

@@ -1,11 +1,11 @@
 info:
-  name: Descargar PDF
+  name: Descargar Application Response
   type: http
-  seq: 6
+  seq: 7
 
 http:
   method: GET
-  url: "{{url_api}}/v2/payrolls/:number/download-pdf"
+  url: "{{url_api}}/v2/adjustment-payrolls/:number/download-application-response"
   headers:
     - name: Accept
       value: application/json

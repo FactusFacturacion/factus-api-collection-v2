@@ -26,7 +26,7 @@ http:
           "bank_name": "Bancolombia",
           "account_type": "1",
           "account_number": "123456789",
-          "payment_date": "2026-06-05"
+          "payment_dates": ["2026-05-31"]
         },
         "worker": {
           "identification_document_code": "13",
